@@ -1,11 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const { MongoClient } = require("mongodb");
-const env = require('dotenv').config();
 const cors = require("cors");
-const bcrypt = require("bcrypt");
-const nodemailer = require("nodemailer");
-const jwt = require('jsonwebtoken');
 const mongoose = require("mongoose");
 const wordRouter = require("./routers/wordRouter");
 const userRouter = require("./routers/userRouter");
