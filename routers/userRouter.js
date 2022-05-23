@@ -11,7 +11,6 @@ router.route("/verifyEmail")
 router.route("/login")
     .post(Login)
 
-
 router.route("/me")
     .get(authorize, (req, res) => {
         res.send(req.user);
